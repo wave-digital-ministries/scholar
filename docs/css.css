@@ -1,0 +1,33 @@
+html{
+background-color: #6b868d;
+
+}
+.menu-button{
+  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+filter: blur(0px);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.3s;
+}
+.menu-button:hover{
+  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+filter: blur(2px);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.3s;
+}
+.menu{
+  position: fixed;
+  padding: 2mm;
+  border: none;
+  border-radius: 0mm 0mm 10mm 0mm;
+  background-color: #d2dadd;
+}
+.main-content{
+  padding-top: 0mm;
+  padding-left:5mm;
+  padding-right:5mm;
+
+}
+body{
+  height: 100%;
+
+}
