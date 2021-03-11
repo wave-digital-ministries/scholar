@@ -50,8 +50,8 @@
   </ul>
 </div>
   </header>
-  <body style="background-color: #d2dadd;" onload="searching()">
-
+  <body style="background-color: #d2dadd;" onload="loaded">
+    <script src="./search.js" charset="utf-8"></script>
 
     <div name="header" class="uk-height-viewport uk-background-cover uk-light uk-flex" uk-parallax="bgy: -50; " style="background-image: url('media/banner.jpg');">
 
@@ -72,21 +72,21 @@
 
     </div>
 
-    <div name="search" class="uk-height-viewport uk-background-cover uk-light uk-flex" uk-parallax="bgy: -50; " style="background-color: #6b868d;">
+    <div name="search" class="uk-height-viewport uk-background-cover uk-light uk-flex"  style="background-color: #6b868d;">
 <a id="search"></a>
         <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
           <img src="./media/research.svg" width="50%" alt="Person reading online article. Illustration sourced from Undraw.co">
-          <h3>Search WDM Scholar & WDM Courses</h3>
-          <p></p>
-          <script async src="https://cse.google.com/cse.js?cx=80b1d1b48ea05a57b"></script>
-          <div class="gcse-search"></div>
-
+          <h3>Search WDM Scholar</h3>
+          <p>Our JavaScript-based search system makes finding articles fast and easy!</p>
+          <!--<script async src="https://cse.google.com/cse.js?cx=80b1d1b48ea05a57b"></script>
+          <div class="gcse-search"></div>-->
+          <div uk-lightbox>
+            <a href="./search.html"><button class="button">Search now!</button></a>
+          </div>
             </center>
         <p style="padding:2mm;"></p>
         </div>
-
     </div>
-
     <div name="wdm" class="uk-height-viewport uk-background-cover uk-light uk-flex" uk-parallax="bgy: -50; " style="background-color: #ab9776;">
 <a id="wdm"></a>
         <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
@@ -99,7 +99,7 @@
     </div>
   </body>
   <footer>
-    <script type="text/javascript">
+    <script>
     function myFunction() {
       // Declare variables
       var input, filter, ul, li, a, i, txtValue;
@@ -120,22 +120,6 @@
       }
     }
 
-    function searched(){
-    /* document.getElementById("searchButt").style.visibility = "hidden"; */
-    document.getElementById("topapps").style.visibility = "hidden";
-    document.getElementById("myUL").style.visibility = "visible";
-    document.getElementById("myInput").style.width = "90%";
-    document.getElementById("myUL").style.height = "100%";
-
-    }
-
-    function searching(){
-      var x = document.getElementById("myUL");
-    if (x.style.display === "none") {
-     x.style.display = "block";
-    } else {
-     x.style.display = "none";
-    }
     </script>
   </footer>
 </html>

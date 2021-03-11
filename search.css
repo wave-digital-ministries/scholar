@@ -12,14 +12,7 @@ color: #fff;
   border-radius: 3px;
   margin-bottom: 12px; /* Add some space below the input */
 box-shadow: 0mm 0mm 1mm black;
-}
-.redbutton{
-  box-shadow: 0mm 0mm 1mm black;
-  border-radius: 3px;
-  font-size: 20px;
-  border: none;
-  background-color: #d63348;
-  color: #fff;
+width: 90%;
 }
 #myInput:focus{
   outline: none;
@@ -32,14 +25,31 @@ box-shadow: 0mm 0mm 1mm black;
   margin: 0;
 column-count: 1;
 overflow-x:hidden;
+border-radius: 3px;
 }
 #myUL li {
-
+  background-color: #ab9776;
   padding: 0px;
   color: black;
-
-  color: black; /* Add a black text color */
+  border-bottom: solid;
+  border-color: #d2dadd;
+  border-width: thin;
+  color: #d2dadd; /* Add a black text color */
   display: block; /* Make it into a block element to fill the whole list */
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.3s;
+}
+#myUL li:hover {
+  background-color: #1a1a1a;
+  padding: 0px;
+  color: black;
+  border-bottom: solid;
+  border-color: #d2dadd;
+  border-width: thin;
+  color: #d2dadd; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.3s;
 }
 
 /* #myUL li a {
@@ -64,7 +74,26 @@ overflow-x:hidden;
 }
 
 
-
+.button{
+  box-shadow: 0mm 0mm 1mm black;
+  border-radius: 3px;
+  font-size: 20px;
+  border: none;
+  background-color: #ab9776;
+  color: #d2dadd;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.3s;
+}
+.button:hover{
+  box-shadow: 2mm 2mm 1mm black;
+  border-radius: 3px;
+  font-size: 20px;
+  border: none;
+  background-color: #ab9776;
+  color: #d2dadd;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.3s;
+}
 
 .index{
   -moz-column-fill: auto; /* Firefox */
