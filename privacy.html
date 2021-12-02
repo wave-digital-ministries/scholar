@@ -39,34 +39,12 @@
     <meta property="twitter:description" content="A scholarly research platform from the Christian perspective.">
     <meta property="twitter:image" content="https://scholar.wavedm.net/scholarsocial.jpg">
     <meta property="twitter:url" content="https://scholar.wavedm.net">
-
+    <script src="https://scholar.wavedm.net/js/js.js" charset="utf-8"></script>
   </head>
   <header>
-   <div class="dropdown menu" style="position: fixed;">
-
-     <a class="menu-button" href="./index.html"><img src="./icon.png" width="75mm" alt="Home button"></a>
-    <a class="menu-button" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="./menu.png" width="50mm" alt="Menu"></a>
-
-
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <li>
-    <div uk-lightbox>
-      <a class="dropdown-item" href="https://scholar.wavedm.net/search.html">Search</a>
-    </div>
-  </li>
-    <!--<li><a class="dropdown-item" href="#">Discover</a></li>
-    <li><a class="dropdown-item" href="#">Science</a></li>
-    <li><a class="dropdown-item" href="#">History</a></li>
-    <li><a class="dropdown-item" href="#">Culture</a></li>
-    <li><a class="dropdown-item" href="#">Faith</a></li> -->
-    <li><a class="dropdown-item" href="https://scholar.wavedm.net/#about">About</a></li>
-    <!--<li><a class="dropdown-item" href="https://wdm-scholar.mn.co/feed" target="_blank">Connect</a></li>-->
-    <li><a class="dropdown-item" href="https://wavedm.churchcenter.com/people/forms/228365" target="_blank">Submit research</a></li>
-    <!--<li><a class="dropdown-item" href="#">Privacy</a></li>-->
-  </ul>
-</div>
+   <div id="menu"></div>
   </header>
-  <body style="background-color: #d2dadd;" onload="loaded">
+  <body style="background-color: #d2dadd;" onload="menu()">
     <script src="./search.js" charset="utf-8"></script>
 
     <div name="header" class="uk-height-viewport uk-background-cover uk-light uk-flex" uk-parallax="bgy: -50; " style="background-image: url('media/banner.jpg');">
